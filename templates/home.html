@@ -1,0 +1,605 @@
+{% extends "base.html" %} {% block content %}
+<!--imp! Header Section -->
+<header>
+  <!--imp! Navbar Section -->
+  <nav
+    class="navbar navbar-expand-lg dark-black py-1 px-3 position-fixed top-0 w-100 z-3"
+  >
+    <div class="container">
+      <a href="#">
+        <img
+          src="{{ url_for('static', filename='img/logo.png') }}"
+          alt="Logo"
+          width="150"
+        />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarToggler"
+      >
+        <i class="fa-solid fa-bars text-white"></i>
+      </button>
+      <div class="navbar-collapse collapse mt-3 mt-lg-0" id="navbarToggler">
+        <ul class="navbar-nav ms-auto">
+          <li>
+            <a class="nav-item nav-link text-white me-lg-5" href="#hero-section"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-item nav-link text-white me-lg-5"
+              href="#about-section"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-item nav-link text-white me-lg-5"
+              href="#services-section"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a class="nav-item nav-link text-white me-lg-5" href="#portfolio"
+              >Portfolio</a
+            >
+          </li>
+          <li>
+            <a class="nav-item nav-link text-white me-lg-5" href="#contact"
+              >Contact</a
+            >
+          </li>
+          <li class="nav-item mt-3 mt-lg-0">
+            <button class="btn-light rounded-pill px-5 px-0">
+              <a
+                class="text-dark p-3 d-inline-block text-decoration-none h4"
+                href="../static/img/KMS.pdf"
+                download
+                >My CV</a
+              >
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<main>
+  <!-- !imp Section-2 (Hero Section) -->
+  <section
+    id="hero-section"
+    class="hero-section mt-100 container-fluid position-relative"
+  >
+    <div class="hero-section-overlay position-absolute"></div>
+    <div
+      class="container d-flex justify-content-center align-items-center flex-column"
+    >
+      <h1 class="text-white fw-semibold text-center text-sm-start">
+        I am Srikanth Babu
+      </h1>
+      <h2 class="text-white mt-4 mt-lg-5 fw-light text-center">
+        <span class="typing-text"></span>
+      </h2>
+    </div>
+  </section>
+  <section id="about-section" class="about-section container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="d-xl-flex gap-5">
+            <img
+              src="../static/img/IMG_3033.JPG"
+              alt="Me"
+              width="250"
+              height="225"
+            />
+            <div class="profile-description">
+              <p class="mb-4 mt-5 mt-xl-0">
+                <span class="fw-600 grey-clr">Name:</span>Srikanth Babu
+              </p>
+              <p class="mb-4 mt-5 mt-xl-0">
+                <span class="fw-600 grey-clr">Profile:</span>Python Developer
+              </p>
+              <p class="mb-4 mt-5 mt-xl-0">
+                <span class="fw-600 grey-clr">Email:</span
+                >srikanthnarayanasamy60@gmail.com
+              </p>
+              <p class="mb-4 mt-5 mt-xl-0">
+                <span class="fw-600 grey-clr">Phone:</span>6383423774
+              </p>
+            </div>
+          </div>
+          <div class="skills-main-div mt-5 mb-2">
+            <h3 class="fw-600">Skills</h3>
+            <div class="skills-div mt-4">
+              <div class="mb-2 d-flex justify-content-between">
+                <span>Python</span>
+                <span>80%</span>
+              </div>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 80%"
+                ></div>
+              </div>
+            </div>
+            <div class="skills-div mt-4">
+              <div class="mb-2 d-flex justify-content-between">
+                <span>HTML</span>
+                <span>80%</span>
+              </div>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 80%"
+                ></div>
+              </div>
+            </div>
+            <div class="skills-div mt-4">
+              <div class="mb-2 d-flex justify-content-between">
+                <span>CSS</span>
+                <span>75%</span>
+              </div>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 75%"
+                ></div>
+              </div>
+            </div>
+            <div class="skills-div mt-4">
+              <div class="mb-2 d-flex justify-content-between">
+                <span>Javascript</span>
+                <span>60%</span>
+              </div>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 60%"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-lg-6 about-me-description mt-5 mt-lg-0 pt-4 pt-lg-0 ps-lg-5"
+        >
+          <h2 class="fw-600">About Me</h2>
+          <div class="blue-line"></div>
+          <p class="mt-5 pt-2 segoe-font">
+            I'm Srikanth Babu, a Python Developer passionate about learning and
+            building projects. I have a keen interest in AI, machine learning,
+            and web development and have worked on projects like a Blog
+            Summarizer, Phishing Email Detection, and Image Reconstruction. As a
+            beginner, I’m constantly exploring new technologies and improving my
+            skills. I’m looking for opportunities to grow, collaborate, and
+            contribute to meaningful projects.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- imp! Resume Section -->
+  <section id="resume-section" class="resume-section container-fluid">
+    <div class="container mt-100">
+      <h2 class="text-center fw-600 dark-black-text">Resume</h2>
+      <div class="blue-line mx-auto">
+        <p class="text-center segoe-font mt-5 mb-3 mb-sm-5 pb-sm-5"></p>
+      </div>
+      <div class="container">
+        <div class="row justify-content-evenly">
+          <div class="col-lg-5">
+            <h4 class="resume-title dark-black-text fw-600 my-5 my-sm-3">
+              Summary
+            </h4>
+            <div class="resume-item mt-5 ps-5">
+              <h5 class="text-uppercase grey-clr">Srikanth Babu</h5>
+              <p class="mt-lg-3 segeo-font">
+                A passionate and dedicated Python developer with hands-on
+                experience in machine learning, deep learning, and web
+                development. Strong problem-solving skills and a keen interest
+                in AI-driven applications.
+              </p>
+            </div>
+            <h4 class="resume-title dark-black-text fw-600 my-5">Education</h4>
+            <div class="resume-item ps-5">
+              <h5 class="text-uppercase grey-clr mb-3">
+                M.Tech Integrated Software Engineering
+              </h5>
+              <h6 class="year mb-4">2022 - 2027</h6>
+              <p class="text-uppercase">vellore institute of technology</p>
+              <p class="mt-lg-3 segeo-font">Expected Graduation Year: 2027</p>
+            </div>
+            <h4 class="resume-title dark-black-text fw-600 my-5">Skills</h4>
+            <div class="resume-item mt-5 ps-5">
+              <ul>
+                <li class="resume-item-list mb-4" style="font-size: 16px">
+                  Programming Language: Python, SQL, Javascripts
+                </li>
+                <li class="resume-item-list" style="font-size: 16px">
+                  Framework & Tools: Flask, Tensorflow
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <h4 class="resume-title dark-black-text fw-600 my-5 my-sm-3">
+              Projects
+            </h4>
+            <div class="resume-item mt-5 ps-5">
+              <ol class>
+                <li class="resume-item-list mb-4 dark-black-text">
+                  Blog Summarizer
+                  <ul class="mt-3">
+                    <li class="mb-2">
+                      Developed a Flask-based website that automatically
+                      summarizes blog posts using Transformer-based NLP models.
+                    </li>
+                    <li class="mb-2">
+                      Implemented AI-driven text summarization using models like
+                      BERT, T5, or GPT for high-quality summaries.
+                    </li>
+                  </ul>
+                </li>
+                <li class="resume-item-list mb-4 dark-black-text">
+                  Phishing Email Detection (ML & DL-based, Model Only)
+                  <ul class="mt-3">
+                    <li class="mb-2">
+                      Built machine learning and deep learning models to
+                      classify phishing emails.
+                    </li>
+                    <li class="mb-2">
+                      Used NLP and feature extraction to improve model accuracy.
+                    </li>
+                  </ul>
+                </li>
+                <li class="resume-item-list mb-4 dark-black-text">
+                  Image Reconstruction for Ultrafast Ultrasound Images
+                  (DL-based)
+                  <ul class="mt-3">
+                    <li class="mb-2">
+                      Developed a deep learning model for reconstructing medical
+                      ultrasound images.
+                    </li>
+                    <li class="mb-2">
+                      Improved image quality using advanced neural networks.
+                    </li>
+                  </ul>
+                </li>
+              </ol>
+            </div>
+            <h4 class="resume-title dark-black-text fw-600 my-5 my-sm-3">
+              Contact
+            </h4>
+            <div class="resume-item mt-5 ps-5">
+              <ul>
+                <li class="mb-4 segeo-font" style="font-size: 18px">
+                  Email:srikanthnarayanasamy@gmail.com
+                </li>
+                <li class="mb-4 segeo-font" style="font-size: 18px">
+                    <a class="text-decoration-none dark-black-text" href="https://www.linkedin.com/in/srikanth-babu-s-n-81a682254?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a>
+                </li>
+                <li class="mb-4 segeo-font" style="font-size: 18px">
+                    <a class="text-decoration-none dark-black-text" href="https://github.com/Srikanth-coder-max" target="_blank">github.com/Srikanth-coder-max</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--imp! Service Section-->
+  <section id="services-section" class="services-section container-fluid">
+    <div class="container mt-100">
+      <h2 class="text-center fw-600 dark-black-text">Experiences</h2>
+      <h5 class="text-center dark-black-text">(Begineer Level)</h5>
+      <div class="blue-line mx-auto">
+        <p class="text-center segoe-font mt-5 mb-3 mb-sm-5 pb-sm-5"></p>
+      </div>
+      <div class="container">
+        <div class="row justify-content-evenly">
+          <div class="col-lg-6 col-md-6 col-12 mb-4">
+            <div class="service-item postion-relative">
+              <div class="icon">
+                <i class="fa-solid fa-chart-line"></i>
+              </div>
+              <h4 class="mt-5 fw-600">Web development</h4>
+              <p class="segeo-font">
+                I'm exploring web development using Flask/Django for backend
+                applications. I have built a blog summarizer website using Flask
+                and AI, where users can input blog content and get concise
+                summaries. I'm also learning frontend development to improve my
+                web projects.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-12">
+            <div class="service-item postion-relative">
+              <div class="icon">
+                <i class="fa-solid fa-brain"></i>
+              </div>
+              <h4 class="mt-5 fw-600">Model Training</h4>
+              <p class="segeo-font">
+                I'm learning how to train machine learning models for various
+                applications. I have worked on phishing email detection using ML
+                and deep learning-based image reconstruction for ultrasound
+                images. I'm improving my knowledge of data preprocessing, model
+                evaluation, and optimization techniques.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--imp! Achivements Section-->
+  <section class="achivement-section container-fluid" id="achivements">
+    <div class="overlay">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-lg-12 d-flex flex-column justify-content-center align-items-center mb-35"
+          >
+            <div class="d-flex">
+              <span
+                data-purecounter-start="0"
+                data-purecounter-end="3"
+                class="counter"
+                >3</span
+              >
+              <span></span>
+            </div>
+            <p class="text-center text-white mb-0">Projects</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- imp! Portfolio Section -->
+  <section id="portfolio" class="portfolio-seection container-fluid">
+    <div class="container mt-100">
+      <h2 class="text-center fw-600 dark-black-text">Project Done</h2>
+      <div class="blue-line mx-auto">
+        <p class="text-center segoe-font mt-5 mb-3 mb-sm-5 pb-sm-5"></p>
+      </div>
+      <div class="container projects-main-div">
+        <div class="project-div pt-3">
+          <div class="row justify-content-center mt-lg-5 pt-lg-3">
+            <div class="img-div col-lg-4 col-md-6 col-12 pe-4">
+              <a
+                href="https://github.com/Srikanth-coder-max/BlogSummarizer"
+                target="_blank"
+              >
+                <img
+                  src="../static/img/Summarizer.png"
+                  alt="app-1"
+                  class="w-100"
+                  style="height: 232.08; border-radius: 1rem"
+                />
+              </a>
+            </div>
+            <div class="img-div col-lg-4 col-md-6 col-12 pe-4">
+              <a
+                href="https://github.com/Srikanth-coder-max/PhishingEmailDetection"
+                target="_blank"
+              >
+                <img
+                  src="../static/img/phishing_email_detection.png"
+                  alt="app-2"
+                  class="w-100"
+                  style="border-radius: 1rem"
+                />
+              </a>
+            </div>
+            <div class="img-div col-lg-4 col-md-6 col-12 pe-4 mt-5 mt-lg-0">
+              <a
+                href="https://github.com/Srikanth-coder-max/Image_reconstruction_for_ultrasound_ultrafast_images"
+                target="_blank"
+              >
+                <img
+                  src="../static/img/Image_Processing_Projects.png"
+                  alt="app-3"
+                  class="w-100"
+                  style="border-radius: 1rem"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- imp! FAQ Section -->
+  <section id="faq" class="faq-section container-fluid">
+    <div class="container mt-100">
+      <div class="row justify-content-center gap-5">
+        <div class="col-12 col-md-3">
+          <h2 class="text-center text-lg-start">FAQS</h2>
+        </div>
+        <div class="col-12 col-md-8 mt-5 mt-md-0">
+          <div class="accordion" id="accordionMain">
+            <div class="accordion-item mb-5">
+              <button
+                class="accordion-button fw-600 p-5 py-4"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+              >
+                What is the Blog Summarizer, and how does it work?
+              </button>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse ps-5"
+                data-bs-parent="#accordionMain"
+              >
+                <div class="accordion-body">
+                  <p class="segeo-font">
+                    The Blog Summarizer is an AI-powered tool that condenses
+                    lengthy blog posts into concise summaries. It uses NLP
+                    techniques to extract key information and present it in a
+                    shorter format while preserving the original meaning.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item mb-5">
+              <button
+                class="accordion-button fw-600 p-5 py-4"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+              >
+                How does the Phishing Email Detection system identify phishing
+                emails?
+              </button>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse ps-5"
+                data-bs-parent="#accordionMain"
+              >
+                <div class="accordion-body">
+                  <p class="segeo-font">
+                    The system uses machine learning and deep learning models to
+                    analyze email features such as sender information, message
+                    content, and embedded links. It then classifies emails as
+                    phishing or legitimate based on trained patterns.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item mb-5">
+              <button
+                class="accordion-button fw-600 p-5 py-4"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+              >
+                What technology stack is used in the Image Reconstruction
+                project?
+              </button>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse ps-5"
+                data-bs-parent="#accordionMain"
+              >
+                <div class="accordion-body">
+                  <p class="segeo-font">
+                    The Image Reconstruction for Ultrafast Ultrasound Images
+                    project utilizes deep learning techniques, specifically
+                    convolutional neural networks (CNNs), to enhance and
+                    reconstruct high-speed ultrasound images with improved
+                    clarity.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item mb-5">
+              <button
+                class="accordion-button fw-600 p-5 py-4"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
+              >
+                Is the Blog Summarizer available as a web application?
+              </button>
+              <div
+                id="collapseFour"
+                class="accordion-collapse collapse ps-5"
+                data-bs-parent="#accordionMain"
+              >
+                <div class="accordion-body">
+                  <p class="segeo-font">
+                    Yes, the Blog Summarizer is developed as a web application
+                    using Flask for the backend and React for the frontend.
+                    Users can input URLs or text to receive AI-generated
+                    summaries instantly.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- /* imp! Portfolio Section */ -->
+  <section id="contact" class="contact-section container-fluid">
+    <div class="container mt-100">
+      <h2 class="text-center fw-600 dark-black-text">Contact</h2>
+      <div class="blue-line mx-auto">
+        <p class="text-center segeo-font mt-5 mb-4 pb-5"></p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-8 col-12">
+          <form
+            class="bg-white rounded shadow-5-strong p-3 py-5 p-sm-5 text-xl-center"
+            id="contact-form"
+          >
+            <input
+              type="text"
+              class="form-control form-control-lg mb-5 p-3"
+              required
+              placeholder="Enter your name"
+              id="full_name"
+            />
+            <input
+              type="email"
+              class="form-control form-control-lg mb-5 p-3"
+              required
+              placeholder="Enter your email"
+              id="email_id"
+            />
+            <textarea
+              class="form-control form-control-lg mb-5"
+              rows="8"
+              id="message"
+              placeholder="Enter your message"
+              required
+            ></textarea>
+            <button class="btn btn-block submit-btn rounded-pill" type="submit">
+              Message
+            </button>
+            <p class="thank-you-msg mt-5 text-center">
+              Thank you for submitting the form!
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<!-- imp! Footer Section -->
+
+<footer id="footer" class="footer-section container-fluid mt-100">
+  <p class="copyright-txt text-white text-center text-sm-start mb-5">
+    ©Copyright <span class="fw-600"> Srikanth Babu </span>All rights Reserved
+  </p>
+  <div class="social-icons">
+    <a href="https://www.linkedin.com/in/srikanth-babu-s-n-81a682254?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="text-decoration-none">
+      <i class="fa-brands fa-linkedin"></i>
+    </a>
+    <a href="https://github.com/Srikanth-coder-max" target="_blank" class="text-decoration-none">
+      <i class="fa-brands fa-github"></i>
+    </a>
+    <a href="https://www.instagram.com/srikanth6?igsh=NTVndjJuNG5iM2x5" target="_blank" class="text-decoration-none">
+      <i class="fa-brands fa-instagram"></i>
+    </a>
+  </div>
+</footer>
+
+{% endblock %}
