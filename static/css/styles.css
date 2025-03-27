@@ -145,6 +145,7 @@ section {
 /* imp! (Hero Section) */
 
 .hero-section {
+
   background-image: url(../img/Me-Photoroom.png);
   background-color: var(--dark-black);
   background-size: cover;
@@ -152,6 +153,21 @@ section {
   background-position-x: center center;
   z-index: 1;
 }
+
+    background-image: url(../img/Me-Photoroom.png);
+    background-color: var(--dark-black);
+    background-size: contain; /* Ensures full image is visible */
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full screen height */
+    position: relative;
+    z-index: 1;
+  }
+  
+
 
 .hero-section-overlay {
   top: 0;
