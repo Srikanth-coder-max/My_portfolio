@@ -145,27 +145,18 @@ section {
 /* imp! (Hero Section) */
 
 .hero-section {
-
   background-image: url(../img/Me-Photoroom.png);
   background-color: var(--dark-black);
-  background-size: cover;
+  background-size: contain; /* Ensures full image is visible */
   background-repeat: no-repeat;
-  background-position-x: center center;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full screen height */
+  position: relative;
   z-index: 1;
 }
-
-    background-image: url(../img/Me-Photoroom.png);
-    background-color: var(--dark-black);
-    background-size: contain; /* Ensures full image is visible */
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh; /* Full screen height */
-    position: relative;
-    z-index: 1;
-  }
   
 
 
